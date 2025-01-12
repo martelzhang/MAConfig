@@ -121,7 +121,7 @@ function mail {
     open -a "NetEase Email Master"
 }
 
-function music {
+function msc {
     open -a "NetEase Music"
 }
 
@@ -143,4 +143,13 @@ alias g++="g++ -std=c++17"
 alias ls="lsd -l"
 
 alias matlab="/Applications/MATLAB.app/bin/matlab -nodesktop"
+
+alias rng="ranger"
+
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+
+alias dsignore='touch .gitignore && echo -e ".DS_Store\n**/.DS_Store\n.DS_Store?" > .gitignore' 
+
+eval $(thefuck --alias)
+
 
