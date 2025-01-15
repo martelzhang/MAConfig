@@ -150,6 +150,8 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 
 alias dsignore='touch .gitignore && echo -e ".DS_Store\n**/.DS_Store\n.DS_Store?" > .gitignore' 
 
+alias ta='tmux attach'
+
 eval $(thefuck --alias)
 
 
