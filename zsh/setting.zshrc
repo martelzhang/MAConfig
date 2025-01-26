@@ -132,6 +132,15 @@ function lark {
 function ztr {
     open -a "Zotero"
 }
+
+function ya() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 # python path
 
 export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin/python3:$PATH"
@@ -144,14 +153,14 @@ alias ls="lsd -l"
 
 alias matlab="/Applications/MATLAB.app/bin/matlab -nodesktop"
 
-alias rng="ranger"
-
-alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-
 alias dsignore='touch .gitignore && echo -e ".DS_Store\n**/.DS_Store\n.DS_Store?" > .gitignore' 
 
 alias ta='tmux attach'
 
 eval $(thefuck --alias)
 
+PROMPT='${ret_status} %{$fg[cyan]%}[%~]%{$reset_color%} $(git_prompt_info)'
 
+# PROMPT='${ret_status} %{$fg[cyan]%}[%{$(echo $PWD | sed "s|^$HOME|/Users/MartelZhang|")]%]${reset_color} $(git_prompt_info)'
+
+echo -e "( '-')ノ(._. )"
