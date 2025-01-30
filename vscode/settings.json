@@ -192,5 +192,32 @@
   "code-runner.saveAllFilesBeforeRun": true,
   "code-runner.saveFileBeforeRun": true,
   "workbench.iconTheme": "material-icon-theme",
+  "svg.preview.mode": "svg",
+  "terminal.integrated.commandsToSkipShell": ["matlab.interrupt"],
+  "MATLAB.showFeatureNotAvailableError": false,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "cmake.showOptionsMovedNotification": false,
+  "excalidraw.theme": "dark",
+  "code-runner.languageIdToFileExtensionMap": {
+    "bat": ".bat",
+    "powershell": ".ps1",
+    "typescript": ".ts"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "cSpell.mergeCSpellSettings": false,
+  "editor.codeActionsOnSave": {
+
+  },
+  "matlab.matlabpath": "/Applications/MATLAB_R2019a.app/bin/maci64/MATLAB",
+  "matlab.mlintpath": "/Applications/MATLAB_R2019a.app/bin/maci64/mlint",
+  "files.associations": { "*.m": "matlab" },
 }
 
