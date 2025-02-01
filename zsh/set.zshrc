@@ -164,3 +164,7 @@ PROMPT='${ret_status} %{$fg[cyan]%}[%~]%{$reset_color%} $(git_prompt_info)'
 # PROMPT='${ret_status} %{$fg[cyan]%}[%{$(echo $PWD | sed "s|^$HOME|/Users/MartelZhang|")]%]${reset_color} $(git_prompt_info)'
 
 echo -e "( '-')ノ(._. )"
+
+export PATH="/Applications/Matlab.app/bin/:$PATH"
+
+alias cat="bat"
