@@ -13,6 +13,9 @@ keymap = [
 
     # Shell command
     { on = "<C-g>", run = "shell --confirm --block lazygit", desc = "Lazygit" },
+    
+    #Compress
+    { on = ["c", "a"], run = "plugin compress", desc = "Archive selected files" },
 
 	# Hopping
 	{ on = "k", run = "arrow -1", desc = "Move cursor up" },
@@ -88,7 +91,7 @@ keymap = [
 	{ on = [ "m", "n" ], run = "linemode none",        desc = "Linemode: none" },
 
 	# Copy
-	{ on = [ "c", "c" ], run = "copy path",             desc = "Copy the file path" },
+	{ on = [ "c", "p" ], run = "copy path",             desc = "Copy the file path" },
 	{ on = [ "c", "d" ], run = "copy dirname",          desc = "Copy the directory path" },
 	{ on = [ "c", "f" ], run = "copy filename",         desc = "Copy the filename" },
 	{ on = [ "c", "n" ], run = "copy name_without_ext", desc = "Copy the filename without extension" },
