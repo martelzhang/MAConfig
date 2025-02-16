@@ -14,17 +14,14 @@ keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 keymap.set("v", "jk", "<ESC>")
 
-
 keymap.set("n", "sh", "<C-w>v")
 keymap.set("n", "sv", "<C-w>s")
-keymap.set("n", "sc", "<C-w>c") -- close current window
-keymap.set("n", "so", "<C-w>o") -- close all others windows
+keymap.set("n", "cc", "<C-w>c") -- close current window
+keymap.set("n", "co", "<C-w>o") -- close all others windows
 keymap.set("n", "<C-h>", "<C-w><left>")
 keymap.set("n", "<C-j>", "<C-w><down>")
 keymap.set("n", "<C-k>", "<C-w><up>")
 keymap.set("n", "<C-l>", "<C-w><right>")
-
-
 
 keymap.set("n", "<leader>nh", ":mohl<CR>")
 
