@@ -86,7 +86,7 @@ config.keys = {
         }),
     },
     {
-        key = "c", mods = "CMD",
+        key = "n", mods = "CMD",
         action = act.Multiple({
             act.SendKey({ mods = "CTRL", key = "p" }),
             act.SendKey({ key = "c" }),
@@ -139,6 +139,13 @@ config.keys = {
         action = act.Multiple({
             act.SendKey({ mods = "CTRL", key = "p" }),
             act.SendKey({ key = " " }),
+        }),
+    },
+    {
+        key = "r", mods = "CMD",
+        action = act.Multiple({
+            act.SendKey({ mods = "CTRL", key = "p" }),
+            act.SendKey({ key = "r" }),
         }),
     },
 }
