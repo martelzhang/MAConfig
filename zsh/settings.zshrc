@@ -153,7 +153,7 @@ alias ls="lsd -l"
 
 alias matlab="/Applications/MATLAB.app/bin/matlab -nodesktop"
 
-alias dsignore='touch .gitignore && echo -e ".DS_Store\n**/.DS_Store\n.DS_Store?" > .gitignore' 
+alias dsig='touch .gitignore && echo -e ".DS_Store\n**/.DS_Store\n.DS_Store?" > .gitignore' 
 
 alias ta='tmux attach'
 
