@@ -68,7 +68,7 @@ keymap = [
 	{ on = "_",         run = "link --relative",             desc = "Symlink the relative path of yanked files" },
 	{ on = "<C-->",     run = "hardlink",                    desc = "Hardlink yanked files" },
 	{ on = "Y",         run = "unyank",                      desc = "Cancel the yank status" },
-	{ on = "X",         run = "unyank",                      desc = "Cancel the yank status" },
+	{ on = "X",         run = "unyank --cut",                desc = "Cancel the yank status" },
 	{ on = "d",         run = "remove",                      desc = "Trash selected files" },
 	{ on = "D",         run = "remove --permanently",        desc = "Permanently delete selected files" },
 	{ on = "a",         run = "create",                      desc = "Create a file (ends with / for directories)" },
@@ -122,7 +122,7 @@ keymap = [
 	{ on = [ ",", "r" ], run = "sort random --reverse=no",                      desc = "Sort randomly" },
 
 	# Goto
-	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
+	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go Home" },
 	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Goto ~/.config" },
 	{ on = [ "g", "d" ],       run = "cd ~/Desktop",   desc = "Goto ~/Desktop" },
 	{ on = [ "g", "w" ],       run = "cd ~/WorkSpace",   desc = "Goto ~/WorkSpace" },

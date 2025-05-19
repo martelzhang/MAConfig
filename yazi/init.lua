@@ -21,3 +21,4 @@ end, 500, Status.RIGHT)
 require("yamb"):setup {
 	cli = "fzf",
 }
+
