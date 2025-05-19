@@ -102,6 +102,10 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=nvim
 
 
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
+export all_proxy=socks5://127.0.0.1:7890
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # open vs code
