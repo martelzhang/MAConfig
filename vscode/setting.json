@@ -240,38 +240,90 @@
   },
 
   "workbench.colorCustomizations": {
-    // 编辑器与面板背景
+   
+    "list.activeSelectionBackground": "#b4befe30",   // 选中项背景（30%你高亮色）
+    "list.activeSelectionForeground": "#d0d6ff",     // 选中项文字（你的选中色）
+    "list.focusBackground": "#b4befe15",             // 焦点项更淡的背景
+    "list.hoverBackground": "#b4befe20",             // 悬停项背景
+    "list.inactiveSelectionBackground": "#b4befe15", // 非活动选中项
+    "list.highlightForeground": "#b4befe",           // 匹配搜索高亮色
+    "list.dropBackground": "#b4befe30",               // 拖放目标背景
+    "list.deemphasizedForeground": "#6c7086",         // 次要项目文字色
+    "list.errorForeground": "#f38ba8",                // 错误状态（红紫色）
+    "list.warningForeground": "#f9e2af",               // 警告状态（柔和黄）
+
     "editor.background": "#161720",          
     "panel.background": "#161720",             // 终端/输出等面板背景
-    // "editorLineNumber.foreground": "#c0caf5",         // 正常行号颜色
-    // "editorLineNumber.activeForeground": "#cfc9c2",   // 当前行号颜色
+
+    "editorLineNumber.activeForeground": "#b3b9de",   // 当前行号颜色
     "editorGutter.background": "#161720",               // 行号区域背景色
 
-    // "list.activeSelectionBackground": "#222528",     // 当前活动项的背景色
-    // "list.activeSelectionForeground": "#FFFFFF",     // 当前活动项的字体颜色
-    // "list.inactiveSelectionBackground": "#3A3D41",   // 不活动但已选中的项背景色
-    // "list.inactiveSelectionForeground": "#CCCCCC",   // 不活动但已选中的项字体色
-    // "list.hoverBackground": "#c0caf5",               // 鼠标悬停时的背景色
-    // "list.hoverForeground": "#161720",               // 鼠标悬停时的字体色
     "sideBar.background": "#161720",                 // 整个侧边栏的背景色（可选）
-    // "sideBar.foreground": "#c0caf5"                  // 整个侧边栏的字体色（可选）
-    // 标签栏背景
+    "sideBar.border": "#303341",
+    
     "tab.activeBackground": "#161720",       // 当前激活的标签背景色
     "tab.inactiveBackground": "#161720",     // 非激活的标签背景色
     
-    // 标签文字颜色
-    // "tab.activeForeground": "#ffffff",       // 当前激活标签的文字颜色
-    // "tab.inactiveForeground": "#aaaaaa",     // 非激活标签的文字颜色
-    
-    // 鼠标悬停时标签颜色
     "tab.hoverBackground": "#1a1b24",        // 悬停时的背景色
-    // "tab.hoverForeground": "#ffffff",        // 悬停时的文字色
-
-    // 整个标题栏背景（可选，用于更一致的顶部样式）
+   
     "editorGroupHeader.tabsBackground": "#161720",  // Tabs所在容器背景色
+    "editorGroupHeader.tabsBorder": "#303341",
+
     "breadcrumb.background": "#161720",
     "minimap.background": "#1a1b24",
+
+    "tab.activeBorderTop": "#161720",
+    "tab.activeBorder": "#b4befe8a",
+
+    "widget.border": "#303341",
+    "input.background": "#161720",
+    "input.border": "#303341",
+    // "widget.shadow": "#484d61"
+    "icon.foreground": "#b3b9de",
+
+    "editorSuggestWidget.background": "#161720",               // 补全框背景，和 Tabs 容器背景一样
+    "editorSuggestWidget.selectedBackground": "#303341",       // 选中项背景，稍微比背景亮一点
+    "editorSuggestWidget.border": "#484d61",                    // 边框色，和 widget.border 一致
+
+    "editorSuggestWidget.foreground": "#b3b9de",               // 普通文字颜色，和 icon.foreground 一致
+    "editorSuggestWidget.selectedForeground": "#d0d6ff",       // 选中项文字颜色，稍亮的蓝色
+    "editorSuggestWidget.highlightForeground": "#b4befe8a",      // 高亮匹配文字颜色，跟 tab.activeBorder 的颜色相近
+    "editorSuggestWidget.focusHighlightForeground": "#b4befe8a", // 焦点高亮文字，和 highlightForeground 一样
+    "editorSuggestWidget.selectedIconForeground": "#b4befe8a",   // 选中项图标颜色，统一成高亮蓝
+    "editorSuggestWidgetStatus.foreground": "#b3b9de",           // 状态文字颜色，跟普通文字颜色一致
+
+    "activityBar.background": "#161720",               // 活动栏背景色
+    "activityBar.foreground": "#b3b9de",               // 图标默认颜色
+    "activityBar.selectedForeground": "#d0d6ff",       // 选中项的图标颜色
+    "activityBar.border": "#303341",                    // 活动栏边框颜色
+    "activityBar.iconClickBorder": "#484d61",           // 点击后的图标边框颜色
+
+    "titleBar.activeBackground": "#161720",            // 活动栏背景色，与侧边栏背景一致
+    "titleBar.activeForeground": "#b3b9de",            // 活动栏文字颜色，和侧边栏图标颜色一致
+    "titleBar.border": "#303341",    
+    
+    "panel.border": "#303341",
+
+    "quickInput.background": "#161720",
+    "quickInput.foreground": "#b3b9de",
+    "quickInput.border": "#303341",
+    "quickInput.focusBackground": "#1a1b26",
+    "quickInputTitle.foreground": "#b3b9de80",
+    "quickInputList.focusBackground": "#303341",
+    "quickInputList.focusForeground": "#d0d6ff",
+
+    "commandCenter.border": "#303341",
+    "commandCenter.background": "#161720",
+    
+    "statusBar.border": "#303341",
+    "statusBarItem.remoteBackground": "#b3b9de",
+    "statusBarItem.remoteHoverBackground": "#898cb0",
+    
+    // "editor.selectionHighlightBackground": "#ff000080",
+    "editor.selectionHighlightBorder": "#b3b9de",
+    // "editor.wordHighlightBackground": "#ff000080",
+    "editor.wordHighlightBorder": "#b3b9de",
+    // "editor.wordHighlightStrongBackground": "#ff000080",
+    "editor.wordHighlightStrongBorder": "#b3b9de"
   },
-
 }
-
