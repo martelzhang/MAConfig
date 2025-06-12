@@ -170,7 +170,6 @@
     "gleam": "gleam run -m $fileNameWithoutExt"
   },
 
-  "workbench.colorTheme": "Tokyo Night",
   "editor.fontSize": 15,
   "files.autoSave": "afterDelay",
   "files.autoGuessEncoding": true,
@@ -191,7 +190,6 @@
   "code-runner.runInTerminal": true,
   "code-runner.saveAllFilesBeforeRun": true,
   "code-runner.saveFileBeforeRun": true,
-  "workbench.iconTheme": "material-icon-theme",
   "svg.preview.mode": "svg",
   "terminal.integrated.commandsToSkipShell": ["matlab.interrupt"],
   "MATLAB.showFeatureNotAvailableError": false,
@@ -213,11 +211,67 @@
     "scminput": false
   },
   "cSpell.mergeCSpellSettings": false,
-  "editor.codeActionsOnSave": {
+  "editor.codeActionsOnSave": {},
 
+  "files.associations": {
+    "*.m": "matlab"
   },
-  "matlab.matlabpath": "/Applications/MATLAB_R2019a.app/bin/maci64/MATLAB",
-  "matlab.mlintpath": "/Applications/MATLAB_R2019a.app/bin/maci64/mlint",
-  "files.associations": { "*.m": "matlab" },
+  "cSpell.words": ["Kalman"],
+  "cSpell.enabled": false,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+
+  "editor.semanticHighlighting.enabled": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+
+  "workbench.colorTheme": "Catppuccin Noctis Mocha",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "parameter": {
+        "bold": true,
+      }
+    }
+  },
+
+  "workbench.colorCustomizations": {
+    // 编辑器与面板背景
+    "editor.background": "#161720",          
+    "panel.background": "#161720",             // 终端/输出等面板背景
+    // "editorLineNumber.foreground": "#c0caf5",         // 正常行号颜色
+    // "editorLineNumber.activeForeground": "#cfc9c2",   // 当前行号颜色
+    "editorGutter.background": "#161720",               // 行号区域背景色
+
+    // "list.activeSelectionBackground": "#222528",     // 当前活动项的背景色
+    // "list.activeSelectionForeground": "#FFFFFF",     // 当前活动项的字体颜色
+    // "list.inactiveSelectionBackground": "#3A3D41",   // 不活动但已选中的项背景色
+    // "list.inactiveSelectionForeground": "#CCCCCC",   // 不活动但已选中的项字体色
+    // "list.hoverBackground": "#c0caf5",               // 鼠标悬停时的背景色
+    // "list.hoverForeground": "#161720",               // 鼠标悬停时的字体色
+    "sideBar.background": "#161720",                 // 整个侧边栏的背景色（可选）
+    // "sideBar.foreground": "#c0caf5"                  // 整个侧边栏的字体色（可选）
+    // 标签栏背景
+    "tab.activeBackground": "#161720",       // 当前激活的标签背景色
+    "tab.inactiveBackground": "#161720",     // 非激活的标签背景色
+    
+    // 标签文字颜色
+    // "tab.activeForeground": "#ffffff",       // 当前激活标签的文字颜色
+    // "tab.inactiveForeground": "#aaaaaa",     // 非激活标签的文字颜色
+    
+    // 鼠标悬停时标签颜色
+    "tab.hoverBackground": "#1a1b24",        // 悬停时的背景色
+    // "tab.hoverForeground": "#ffffff",        // 悬停时的文字色
+
+    // 整个标题栏背景（可选，用于更一致的顶部样式）
+    "editorGroupHeader.tabsBackground": "#161720",  // Tabs所在容器背景色
+    "breadcrumb.background": "#161720",
+    "minimap.background": "#1a1b24",
+  },
+
 }
 
