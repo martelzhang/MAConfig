@@ -240,7 +240,6 @@
   },
 
   "workbench.colorCustomizations": {
-   
     "list.activeSelectionBackground": "#b4befe30",   // 选中项背景（30%你高亮色）
     "list.activeSelectionForeground": "#d0d6ff",     // 选中项文字（你的选中色）
     "list.focusBackground": "#b4befe15",             // 焦点项更淡的背景
@@ -311,6 +310,8 @@
     "quickInputTitle.foreground": "#b3b9de80",
     "quickInputList.focusBackground": "#303341",
     "quickInputList.focusForeground": "#d0d6ff",
+    "pickerGroup.foreground": "#b4befe8a",
+    "pickerGroup.border": "#303341",
 
     "commandCenter.border": "#303341",
     "commandCenter.background": "#161720",
