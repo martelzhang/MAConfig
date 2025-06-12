@@ -226,6 +226,8 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
 
+  "workbench.iconTheme": "material-icon-theme",
+  
   "workbench.colorTheme": "Catppuccin Noctis Mocha",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
@@ -327,4 +329,5 @@
     // "editor.wordHighlightStrongBackground": "#ff000080",
     "editor.wordHighlightStrongBorder": "#b3b9de"
   },
+
 }
