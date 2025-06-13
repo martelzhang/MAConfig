@@ -247,7 +247,8 @@
     "list.focusBackground": "#b4befe15",             // 焦点项更淡的背景
     "list.hoverBackground": "#b4befe20",             // 悬停项背景
     "list.inactiveSelectionBackground": "#b4befe15", // 非活动选中项
-    "list.highlightForeground": "#b4befe",           // 匹配搜索高亮色
+    "list.highlightForeground": "#b4befe8a",           // 匹配搜索高亮色
+    "list.focusHighlightForeground": "#b4befe8a",
     "list.dropBackground": "#b4befe30",               // 拖放目标背景
     "list.deemphasizedForeground": "#6c7086",         // 次要项目文字色
     "list.errorForeground": "#f38ba8",                // 错误状态（红紫色）
@@ -304,14 +305,14 @@
     "titleBar.border": "#303341",    
     
     "panel.border": "#303341",
-
     "quickInput.background": "#161720",
     "quickInput.foreground": "#b3b9de",
     "quickInput.border": "#303341",
     "quickInput.focusBackground": "#1a1b26",
-    "quickInputTitle.foreground": "#b3b9de80",
+    "quickInputTitle.foreground": "#b4befe8a",
     "quickInputList.focusBackground": "#303341",
     "quickInputList.focusForeground": "#d0d6ff",
+    "quickInputList.focusIconForeground": "#b4befe8a",
     "pickerGroup.foreground": "#b4befe8a",
     "pickerGroup.border": "#303341",
 
@@ -327,7 +328,12 @@
     // "editor.wordHighlightBackground": "#ff000080",
     "editor.wordHighlightBorder": "#b3b9de",
     // "editor.wordHighlightStrongBackground": "#ff000080",
-    "editor.wordHighlightStrongBorder": "#b3b9de"
+    "editor.wordHighlightStrongBorder": "#b3b9de",
+
+    "editorHoverWidget.background": "#161720",       // 背景色
+    // "editorHoverWidget.foreground": "#b4befe8a",       // 文字颜色
+    "editorHoverWidget.border": "#484d61",           // 边框颜色
+
   },
 
 }
