@@ -198,7 +198,7 @@
     "workbench.action.tasks.runTask"
   ],
   "cmake.showOptionsMovedNotification": false,
-  "excalidraw.theme": "dark",
+  "excalidraw.theme": "light",
   "code-runner.languageIdToFileExtensionMap": {
     "bat": ".bat",
     "powershell": ".ps1",
