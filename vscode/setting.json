@@ -256,6 +256,7 @@
 
     "editor.background": "#161720",          
     "panel.background": "#161720",             // 终端/输出等面板背景
+    "terminal.background": "#191a24",
 
     "editorLineNumber.activeForeground": "#b3b9de",   // 当前行号颜色
     "editorGutter.background": "#161720",               // 行号区域背景色
