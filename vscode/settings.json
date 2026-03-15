@@ -1,4 +1,7 @@
 {
+  "http.proxyStrictSSL": false,
+  "https.proxy": "http://127.0.0.1:7890",
+  "remote.SSH.useLocalServer": false,
   "latex-workshop.latex.tools": [
     {
       "name": "pdflatex",
@@ -23,25 +26,41 @@
     {
       "name": "bibtex",
       "command": "bibtex",
-      "args": ["%DOCFILE%"]
+      "args": [
+        "%DOCFILE%"
+      ]
     }
   ],
   "latex-workshop.latex.recipes": [
     {
       "name": "xelatex",
-      "tools": ["xelatex"]
+      "tools": [
+        "xelatex"
+      ]
     },
     {
       "name": "pdflatex",
-      "tools": ["pdflatex"]
+      "tools": [
+        "pdflatex"
+      ]
     },
     {
       "name": "xelatex->bibtex->xelatex*2",
-      "tools": ["xelatex", "bibtex", "xelatex", "xelatex"]
+      "tools": [
+        "xelatex",
+        "bibtex",
+        "xelatex",
+        "xelatex"
+      ]
     },
     {
       "name": "pdflatex->bibtex->pdflatex*2",
-      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+      ]
     }
   ],
   "latex-workshop.latex.clean.fileTypes": [
@@ -109,7 +128,6 @@
   "latex-workshop.latex.recipe.default": "lastUsed",
   // 用于反向同步的内部查看器的键绑定。ctrl/cmd +点击(默认)或双击
   "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
-
   "code-runner.executorMap": {
     "javascript": "node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
@@ -169,7 +187,6 @@
     "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
     "gleam": "gleam run -m $fileNameWithoutExt"
   },
-
   "editor.fontSize": 15,
   "files.autoSave": "afterDelay",
   "files.autoGuessEncoding": true,
@@ -191,7 +208,9 @@
   "code-runner.saveAllFilesBeforeRun": true,
   "code-runner.saveFileBeforeRun": true,
   "svg.preview.mode": "svg",
-  "terminal.integrated.commandsToSkipShell": ["matlab.interrupt"],
+  "terminal.integrated.commandsToSkipShell": [
+    "matlab.interrupt"
+  ],
   "MATLAB.showFeatureNotAvailableError": false,
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
@@ -212,99 +231,81 @@
   },
   "cSpell.mergeCSpellSettings": false,
   "editor.codeActionsOnSave": {},
-
   "files.associations": {
     "*.m": "matlab"
   },
-  "cSpell.words": ["Kalman"],
+  "cSpell.words": [
+    "Kalman"
+  ],
   "cSpell.enabled": false,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
-
   "editor.semanticHighlighting.enabled": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
-
   "workbench.iconTheme": "material-icon-theme",
-  
   "workbench.colorTheme": "Catppuccin Noctis Mocha",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
     "rules": {
       "parameter": {
-        "bold": true,
+        "bold": true
       }
     }
   },
-
   "workbench.colorCustomizations": {
-    "list.activeSelectionBackground": "#b4befe30",   // 选中项背景（30%你高亮色）
-    "list.activeSelectionForeground": "#d0d6ff",     // 选中项文字（你的选中色）
-    "list.focusBackground": "#b4befe15",             // 焦点项更淡的背景
-    "list.hoverBackground": "#b4befe20",             // 悬停项背景
+    "list.activeSelectionBackground": "#b4befe30", // 选中项背景（30%你高亮色）
+    "list.activeSelectionForeground": "#d0d6ff", // 选中项文字（你的选中色）
+    "list.focusBackground": "#b4befe15", // 焦点项更淡的背景
+    "list.hoverBackground": "#b4befe20", // 悬停项背景
     "list.inactiveSelectionBackground": "#b4befe15", // 非活动选中项
-    "list.highlightForeground": "#b4befe8a",           // 匹配搜索高亮色
+    "list.highlightForeground": "#b4befe8a", // 匹配搜索高亮色
     "list.focusHighlightForeground": "#b4befe8a",
-    "list.dropBackground": "#b4befe30",               // 拖放目标背景
-    "list.deemphasizedForeground": "#6c7086",         // 次要项目文字色
-    "list.errorForeground": "#f38ba8",                // 错误状态（红紫色）
-    "list.warningForeground": "#f9e2af",               // 警告状态（柔和黄）
-
-    "editor.background": "#161720",          
-    "panel.background": "#161720",             // 终端/输出等面板背景
+    "list.dropBackground": "#b4befe30", // 拖放目标背景
+    "list.deemphasizedForeground": "#6c7086", // 次要项目文字色
+    "list.errorForeground": "#f38ba8", // 错误状态（红紫色）
+    "list.warningForeground": "#f9e2af", // 警告状态（柔和黄）
+    "editor.background": "#161720",
+    "panel.background": "#161720", // 终端/输出等面板背景
     "terminal.background": "#191a24",
-
-    "editorLineNumber.activeForeground": "#b3b9de",   // 当前行号颜色
-    "editorGutter.background": "#161720",               // 行号区域背景色
-
-    "sideBar.background": "#161720",                 // 整个侧边栏的背景色（可选）
+    "editorLineNumber.activeForeground": "#b3b9de", // 当前行号颜色
+    "editorGutter.background": "#161720", // 行号区域背景色
+    "sideBar.background": "#161720", // 整个侧边栏的背景色（可选）
     "sideBar.border": "#303341",
-    
-    "tab.activeBackground": "#161720",       // 当前激活的标签背景色
-    "tab.inactiveBackground": "#161720",     // 非激活的标签背景色
-    
-    "tab.hoverBackground": "#1a1b24",        // 悬停时的背景色
-   
-    "editorGroupHeader.tabsBackground": "#161720",  // Tabs所在容器背景色
+    "tab.activeBackground": "#161720", // 当前激活的标签背景色
+    "tab.inactiveBackground": "#161720", // 非激活的标签背景色
+    "tab.hoverBackground": "#1a1b24", // 悬停时的背景色
+    "editorGroupHeader.tabsBackground": "#161720", // Tabs所在容器背景色
     "editorGroupHeader.tabsBorder": "#303341",
-
     "breadcrumb.background": "#161720",
     "minimap.background": "#1a1b24",
-
     "tab.activeBorderTop": "#161720",
     "tab.activeBorder": "#b4befe8a",
-
     "widget.border": "#303341",
     "input.background": "#161720",
     "input.border": "#303341",
     // "widget.shadow": "#484d61"
     "icon.foreground": "#b3b9de",
-
-    "editorSuggestWidget.background": "#161720",               // 补全框背景，和 Tabs 容器背景一样
-    "editorSuggestWidget.selectedBackground": "#303341",       // 选中项背景，稍微比背景亮一点
-    "editorSuggestWidget.border": "#484d61",                    // 边框色，和 widget.border 一致
-
-    "editorSuggestWidget.foreground": "#b3b9de",               // 普通文字颜色，和 icon.foreground 一致
-    "editorSuggestWidget.selectedForeground": "#d0d6ff",       // 选中项文字颜色，稍亮的蓝色
-    "editorSuggestWidget.highlightForeground": "#b4befe8a",      // 高亮匹配文字颜色，跟 tab.activeBorder 的颜色相近
+    "editorSuggestWidget.background": "#161720", // 补全框背景，和 Tabs 容器背景一样
+    "editorSuggestWidget.selectedBackground": "#303341", // 选中项背景，稍微比背景亮一点
+    "editorSuggestWidget.border": "#484d61", // 边框色，和 widget.border 一致
+    "editorSuggestWidget.foreground": "#b3b9de", // 普通文字颜色，和 icon.foreground 一致
+    "editorSuggestWidget.selectedForeground": "#d0d6ff", // 选中项文字颜色，稍亮的蓝色
+    "editorSuggestWidget.highlightForeground": "#b4befe8a", // 高亮匹配文字颜色，跟 tab.activeBorder 的颜色相近
     "editorSuggestWidget.focusHighlightForeground": "#b4befe8a", // 焦点高亮文字，和 highlightForeground 一样
-    "editorSuggestWidget.selectedIconForeground": "#b4befe8a",   // 选中项图标颜色，统一成高亮蓝
-    "editorSuggestWidgetStatus.foreground": "#b3b9de",           // 状态文字颜色，跟普通文字颜色一致
-
-    "activityBar.background": "#161720",               // 活动栏背景色
-    "activityBar.foreground": "#b3b9de",               // 图标默认颜色
-    "activityBar.selectedForeground": "#d0d6ff",       // 选中项的图标颜色
-    "activityBar.border": "#303341",                    // 活动栏边框颜色
-    "activityBar.iconClickBorder": "#484d61",           // 点击后的图标边框颜色
-
-    "titleBar.activeBackground": "#161720",            // 活动栏背景色，与侧边栏背景一致
-    "titleBar.activeForeground": "#b3b9de",            // 活动栏文字颜色，和侧边栏图标颜色一致
-    "titleBar.border": "#303341",    
-    
+    "editorSuggestWidget.selectedIconForeground": "#b4befe8a", // 选中项图标颜色，统一成高亮蓝
+    "editorSuggestWidgetStatus.foreground": "#b3b9de", // 状态文字颜色，跟普通文字颜色一致
+    "activityBar.background": "#161720", // 活动栏背景色
+    "activityBar.foreground": "#b3b9de", // 图标默认颜色
+    "activityBar.selectedForeground": "#d0d6ff", // 选中项的图标颜色
+    "activityBar.border": "#303341", // 活动栏边框颜色
+    "activityBar.iconClickBorder": "#484d61", // 点击后的图标边框颜色
+    "titleBar.activeBackground": "#161720", // 活动栏背景色，与侧边栏背景一致
+    "titleBar.activeForeground": "#b3b9de", // 活动栏文字颜色，和侧边栏图标颜色一致
+    "titleBar.border": "#303341",
     "panel.border": "#303341",
     "quickInput.background": "#161720",
     "quickInput.foreground": "#b3b9de",
@@ -316,25 +317,48 @@
     "quickInputList.focusIconForeground": "#b4befe8a",
     "pickerGroup.foreground": "#b4befe8a",
     "pickerGroup.border": "#303341",
-
     "commandCenter.border": "#303341",
     "commandCenter.background": "#161720",
-    
     "statusBar.border": "#303341",
     "statusBarItem.remoteBackground": "#b3b9de",
     "statusBarItem.remoteHoverBackground": "#898cb0",
-    
     // "editor.selectionHighlightBackground": "#ff000080",
     "editor.selectionHighlightBorder": "#b3b9de",
     // "editor.wordHighlightBackground": "#ff000080",
     "editor.wordHighlightBorder": "#b3b9de",
     // "editor.wordHighlightStrongBackground": "#ff000080",
     "editor.wordHighlightStrongBorder": "#b3b9de",
-
-    "editorHoverWidget.background": "#161720",       // 背景色
+    "editorHoverWidget.background": "#161720", // 背景色
     // "editorHoverWidget.foreground": "#b4befe8a",       // 文字颜色
-    "editorHoverWidget.border": "#484d61",           // 边框颜色
-
+    "editorHoverWidget.border": "#484d61" // 边框颜色
   },
-
+  "php.validate.executablePath": "/opt/homebrew/bin/php",
+  "php.debug.executablePath": "/opt/homebrew/bin/php",
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "workbench.editor.empty.hint": "hidden",
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultColorDecorators": "never",
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": "off"
+  },
+  "git.confirmSync": false,
+  "chatgpt.cliExecutable": "",
+  "remote.SSH.remotePlatform": {
+    "192.168.2.50": "linux",
+    "192.168.1.165": "linux",
+    "172.20.10.3": "linux",
+    "192.168.2.215": "linux",
+    "192.168.1.123": "linux",
+    "192.168.0.106": "linux",
+    "192.168.50.224": "linux",
+    "192.168.50.120": "linux"
+  },
+  "claudeCode.preferredLocation": "panel",
+  "terminal.integrated.suggest.enabled": false,
+  "terminal.integrated.fontSize": 10,
+  "explorer.confirmPasteNative": false,
+  "markdown-pdf.headerTemplate": "<div></div>",
+  "markdown-pdf.footerTemplate": "<div style=\"font-size: 9px; margin: 0 auto;\"><span class='pageNumber'></span> / <span class='totalPages'></span></div>"
 }
